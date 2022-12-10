@@ -1,7 +1,7 @@
 import os
 
-with open(f'{os.getcwd()}\\rozliczenie-1.csv') as plik:
-    plik.readline()
+with open(os.path.join(os.getcwd(), 'rozliczenie-1.csv'), encoding="utf16", errors='ignore') as plik:
+    data = plik.readline()
     data = plik.readlines()
 
 sum = 0
