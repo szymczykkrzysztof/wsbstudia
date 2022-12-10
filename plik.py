@@ -1,6 +1,5 @@
 import os
 import time
-from datetime import datetime
 
 os.chdir(f"{os.environ['IDEA_INITIAL_DIRECTORY']}\\nauka\\wsbstudia")
 os.mkdir("nowy folder")
@@ -14,3 +13,4 @@ os.rmdir("zmiana nowy folder")
 print(os.listdir(os.getcwd()))
 print(os.getcwd())
 print(os.system("git status"))
+os.system(f"cmd /c cd {os.environ['IDEA_INITIAL_DIRECTORY']}'")
