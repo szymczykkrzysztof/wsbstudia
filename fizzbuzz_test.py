@@ -19,3 +19,11 @@ def test_3():
 
 def test_4():
     assert fizzbuzz(10) == "Buzz"
+
+
+def test_5():
+    assert fizzbuzz(0) == 0
+
+
+def test_6():
+    assert fizzbuzz(-2) is None
